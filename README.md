@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# projeto-1
 
-## Getting Started
+Projeto Next.js criado com `create-next-app`, usando App Router, TypeScript e Tailwind CSS.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js** 16.3.4 (App Router)
+- **React** 19.2.8
+- **TypeScript** 5
+- **Tailwind CSS** 4 (via `@tailwindcss/postcss`)
+- **ESLint** 9 (`eslint-config-next`)
+
+## Estrutura
+
+```
+src/
+  app/
+    layout.tsx     # layout raiz, fontes Geist e metadata
+    page.tsx       # página inicial (scaffold padrão do create-next-app)
+    globals.css     # estilos globais / Tailwind
+public/              # assets estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como rodar
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Comando          | Descrição                        |
+|-------------------|-----------------------------------|
+| `npm run dev`     | servidor de desenvolvimento       |
+| `npm run build`   | build de produção                 |
+| `npm run start`   | inicia o build de produção        |
+| `npm run lint`    | roda o ESLint                     |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Scaffold inicial ainda no estado padrão do `create-next-app` (página `src/app/page.tsx` não foi customizada). Pronto para começar o desenvolvimento.
 
-## Deploy on Vercel
+## Observação para desenvolvimento com IA
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O `AGENTS.md` deste projeto alerta que o Next.js 16 tem mudanças que quebram compatibilidade com o conhecimento de treinamento de alguns modelos. Antes de gerar código novo, vale consultar a documentação em `node_modules/next/dist/docs/`.
