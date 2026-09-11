@@ -250,10 +250,10 @@ export default function Home() {
               Agende um horário e conheça de perto a nossa estrutura.
             </p>
             <a
-              href="tel:+551140028922"
+              href="tel:+351960000000"
               className="flex h-12 items-center justify-center rounded-full bg-white px-8 text-base font-semibold text-orange-600 transition-colors hover:bg-orange-50"
             >
-              📞 (11) 4002-8922
+              📞 +351 960 000 000
             </a>
           </div>
         </section>
