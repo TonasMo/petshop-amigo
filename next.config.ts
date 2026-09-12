@@ -1,17 +1,12 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
   output: 'export',
-  basePath: '/petshop-amigo', // Nome exato do teu repositório
+  basePath: isProd ? '/petshop-amigo' : '',
   images: {
-    unoptimized: true, // Necessário para imagens em exportação estática
+    unoptimized: true,
   },
 };
 
