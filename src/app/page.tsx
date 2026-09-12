@@ -265,7 +265,7 @@ export default function Home() {
           <span className="flex items-center gap-2 font-semibold text-zinc-900 dark:text-zinc-50">
             <span aria-hidden>🐾</span> PetShop Amigo
           </span>
-          <p>Rua dos Animais, 123 — São Paulo, SP</p>
+          <p>Rua dos Animais, 123 — Lisboa</p>
           <p>&copy; {new Date().getFullYear()} PetShop Amigo. Todos os direitos reservados.</p>
         </div>
       </footer>
