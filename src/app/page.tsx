@@ -74,6 +74,9 @@ export default function Home() {
             <a href="#depoimentos" className="hover:text-zinc-900 dark:hover:text-zinc-50">
               Depoimentos
             </a>
+            <a href="#localizacao" className="hover:text-zinc-900 dark:hover:text-zinc-50">
+              Localização
+            </a>
             <a href="#contato" className="hover:text-zinc-900 dark:hover:text-zinc-50">
               Contato
             </a>
@@ -237,6 +240,38 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Localização */}
+        <section
+          id="localizacao"
+          className="border-t border-black/[.06] bg-zinc-50 dark:border-white/[.08] dark:bg-zinc-950"
+        >
+          <div className="mx-auto w-full max-w-6xl px-6 py-24">
+            <div className="mx-auto mb-12 max-w-2xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+                Onde estamos
+              </h2>
+              <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                Venha nos visitar. Estamos localizados no coração de Lisboa.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-3xl border border-black/[.06] shadow-lg dark:border-white/[.08]">
+              <iframe
+                title="Localização da PetShop Amigo no Google Maps"
+                src="https://www.google.com/maps?q=Rua+dos+Animais,+123,+Lisboa&output=embed"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              />
+            </div>
+            <p className="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
+              📍 Rua dos Animais, 123 — Lisboa
+            </p>
           </div>
         </section>
 
