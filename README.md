@@ -48,7 +48,12 @@ public/              # assets estáticos (ícones/svg)
 - **Serviços** — banho & tosa, consulta veterinária, hotel para pets, loja & acessórios
 - **Sobre** — diferenciais do pet shop
 - **Depoimentos** — avaliações de clientes
+- **Localização** — mapa incorporado (Google Maps) com o endereço em Lisboa
 - **Contato/CTA** — telefone e chamada final para agendamento
+
+## Deploy
+
+O site é exportado como estático (`output: 'export'` no `next.config.ts`) e publicado automaticamente no GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`) a cada push. Em produção, o `basePath` é `/petshop-amigo`.
 
 ## Convenções de desenvolvimento
 

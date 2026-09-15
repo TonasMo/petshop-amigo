@@ -42,3 +42,19 @@
 - Middleware em `middleware.ts` na raiz — não dentro de `app/`
 - Supabase client no server: usar `createServerClient` (cookies). No client: `createBrowserClient`
 - Imagens externas precisam de domínio autorizado em `next.config.ts` (remotePatterns)
+
+
+## Git Commits
+NEVER run git commit directly. ALWAYS use the commit skill for every
+git commit in this project, regardless of how the user requested it
+This applies to:
+
+Explicit requests: "faz commit", "comita", "commit das mudanças"
+Implicit requests: "salva", "finaliza a feature", "pode subir"
+Any situation where you would naturaly run git commit
+
+The commit skill enforces Conventional Commits specification and ensures
+consistent commit history across the project.
+
+## Frontend
+Sempre que for criar componentes seja com React, HTML, CSS, use a skill frontend-design
