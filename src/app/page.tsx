@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -207,8 +208,25 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-orange-200 to-amber-100 p-16 text-8xl dark:from-orange-500/20 dark:to-amber-500/10">
-              🐶🐱
+            <div className="grid grid-cols-2 gap-4 rounded-3xl bg-gradient-to-br from-orange-200 to-amber-100 p-4 dark:from-orange-500/20 dark:to-amber-500/10">
+              <div className="relative aspect-square overflow-hidden rounded-2xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&q=80"
+                  alt="Cão feliz cuidado pela PetShop Amigo"
+                  fill
+                  sizes="(min-width: 768px) 25vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-2xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80"
+                  alt="Gato feliz cuidado pela PetShop Amigo"
+                  fill
+                  sizes="(min-width: 768px) 25vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
